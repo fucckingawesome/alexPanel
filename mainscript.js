@@ -64,7 +64,7 @@ let text = `<p>Wallet: ${wallet} <br> ${phrase}</p><br>`
 //del button
 let delBtn = document.createElement("button")
    delBtn.setAttribute("style", "background-color: rgb(54, 57, 63); color:white;")
-   delBtn.innerHTML = "ðŸ—‘ï¸"
+   delBtn.innerHTML = "🗑️"
 delBtn.addEventListener("click", deleteTodo)
 line.prepend(delBtn)
 
