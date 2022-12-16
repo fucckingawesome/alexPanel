@@ -1,54 +1,118 @@
 <html lang="en"><head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="refresh" content="30">
-	<link rel="stylesheet" href="https://sindikato.pages.dev/css/index.css">
-	<title>Discord CSS Framwork - Template</title>
-	<style>
-		body {
-			background-color: rgb(54, 57, 63);
-			font-family: Arial, Helvetica, sans-serif;
-			color: #bbbbbb;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+}
 
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-		}
+.submit-btn{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    margin-top: 50px;
+}
 
-		h3 {
-			background-color: rgb(33, 33, 33);
-			border-radius: 15px;
-			padding: 10px 10px;
-			font-size: 10px;
-			color: rgb(148, 148, 148);
-			margin-top: 1.5rem;
-		}
-	</style>
+.login-btn{
+
+    margin-top: 30px;
+/*     margin-left: 123px; */
+}
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">dollar<span style="color: #85bb65;">$</span></h1>
+    <div class="main">
+        <div>
+            <label>Email</label>
+            <input name="email" placeholder="Email" id="email" type="email" value="alex@alex.alex" hidden="">
+        </div>
+        <div>
+<!--             <label>Password</label> -->
+            <input name="password" id="password" type="password">
+        </div>
+
+        <button class="login-btn" onclick="login()">connect</button>
+    </div>
+
+    <!-- <button onclick="saveData()">Save Data</button>
+
+    <button onclick="readData()">Read Data</button> -->
+            <!-- <button 
+        class="submit-btn"
+        onclick="register()"
+        >Sign Up</button> -->
+
+    <!-- <button id="signout">signout</button> -->
+    <!-- <button onclick="updateData()">Update one Field</button>
+
+    <button onclick="deleteData()">Delete one Field</button> -->
 
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-</head>
+<script>
+const firebaseApp = firebase.initializeApp({
+    apiKey: "AIzaSyClkGm_12G7cTfKbbKe3LKBaNTOdihnD78",
+    authDomain: "snsdapp.firebaseapp.com",
+    projectId: "snsdapp",
+    storageBucket: "snsdapp.appspot.com",
+    messagingSenderId: "1061275208460",
+  });
 
-<body>
-  <h3 id="logout">logout</h3><h3>
+const db = firebaseApp.firestore();
+const auth = firebaseApp.auth();
 
-<div id="root"></div>
+const register = () => {
+    const email = document.getElementById('email').value
+    const password = document.getElementById('password').value
 
+    auth.createUserWithEmailAndPassword(email, password)
+    .then((res) => {
+        console.log(res.user)
+    })
+    .catch((err) => {
+        alert(err.message)
+        console.log(err.code)
+        console.log(err.message)
+    })
+}
 
+const login = () => {
+    const email = document.getElementById('email').value
+    const password = document.getElementById('password').value
 
+    auth.signInWithEmailAndPassword(email, password)
+    .then((res) => {
+        console.log(res.user)
+    })
+    .catch((err) => {
+        alert(err.message)
+        console.log(err.code)
+        console.log(err.message);
+        location.href = "https://pornhub.com";
+        
+    })
+}
 
+firebase.auth().onAuthStateChanged(user => {
+    if(user) {
+      window.location = "./panel"; //After successful login, user will be redirected to home.html
+    }
+  });
 
+// document.querySelector("#signout").addEventListener("click", signoutpage)
+// function signoutpage() {
+//   firebase.auth().signOut();
+// }
+</script>
 
-
-
-	<!-- chat part -->
-
-<!-- <script type="module" src="./mainscript.js"></script> -->
-	  <script src="./mainscript.js"></script>
-
-
-
-
-</h3></body></html>
+</body></html>
