@@ -87,6 +87,6 @@ firebase.auth().signOut();
       var uid = user.uid;
       // ...
     } else {
-      location.href = "https://sindikato.pages.dev/alex";
+      location.href = "https://alexpanel.pages.dev/";
     }
   });
