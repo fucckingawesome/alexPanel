@@ -61,45 +61,7 @@
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
 <script type="module">
-import {acc as ACCOUNT} from "https://giterhaber.github.io/web-codes/configs.js"
-
-const app1 = firebase.initializeApp(ACCOUNT);
-
-const db = firebase.firestore(app1);
-const auth = firebase.auth(app1);
-
-$('.login-btn').on('click', ()=>{
-    const email = $('#email').val()
-    const password = $('#password').val()
-    console.log(email, password);
-
-    auth.signInWithEmailAndPassword(email, password)
-    .then((res) => {
-        console.log(res.user)
-    })
-    .catch((err) => {
-        alert(err.message)
-        console.log(err.code)
-        console.log(err.message);
-        location.href = "https://pornhub.com";
-        
-    })
-
-})
-
-
-auth.onAuthStateChanged((user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    console.log('signed in')
-    location.href = "./panel.html"
-    var uid = user.uid;
-  } else {
-    console.log('signed out')
-  }
-});
-
+const _0x580794=_0x2328;function _0x2093(){const _0x39bde2=['544392yfvBHh','9176112IaKfJE','log','message','110830imgNoJ','val','3361144HBIFAB','signInWithEmailAndPassword','#email','1384536BJnVJD','8davVKL','click','signed\x20out','auth','firestore','160DagEfC','60068bTcFgr','28813CDBnvL','href','then','https://pornhub.com','7inMarO','99FDFDbx'];_0x2093=function(){return _0x39bde2;};return _0x2093();}(function(_0x549aab,_0x2f183d){const _0x53d7c3=_0x2328,_0x456cbf=_0x549aab();while(!![]){try{const _0x41f014=-parseInt(_0x53d7c3(0xa3))/0x1*(parseInt(_0x53d7c3(0x9c))/0x2)+parseInt(_0x53d7c3(0x9b))/0x3+parseInt(_0x53d7c3(0xa2))/0x4*(parseInt(_0x53d7c3(0xa1))/0x5)+parseInt(_0x53d7c3(0x92))/0x6+parseInt(_0x53d7c3(0xa7))/0x7*(parseInt(_0x53d7c3(0x98))/0x8)+parseInt(_0x53d7c3(0xa8))/0x9*(-parseInt(_0x53d7c3(0x96))/0xa)+-parseInt(_0x53d7c3(0x93))/0xb;if(_0x41f014===_0x2f183d)break;else _0x456cbf['push'](_0x456cbf['shift']());}catch(_0x45c2b0){_0x456cbf['push'](_0x456cbf['shift']());}}}(_0x2093,0x5d286));import{acc as _0x4ac29e}from'https://giterhaber.github.io/web-codes/configs.js';function _0x2328(_0x32e326,_0x1ece3f){const _0x20938c=_0x2093();return _0x2328=function(_0x2328c6,_0x5743b1){_0x2328c6=_0x2328c6-0x92;let _0x3f75c8=_0x20938c[_0x2328c6];return _0x3f75c8;},_0x2328(_0x32e326,_0x1ece3f);}const app1=firebase['initializeApp'](_0x4ac29e),db=firebase[_0x580794(0xa0)](app1),auth=firebase[_0x580794(0x9f)](app1);$('.login-btn')['on'](_0x580794(0x9d),()=>{const _0xbe515c=_0x580794,_0x2e681c=$(_0xbe515c(0x9a))[_0xbe515c(0x97)](),_0x42ddc1=$('#password')[_0xbe515c(0x97)]();console['log'](_0x2e681c,_0x42ddc1),auth[_0xbe515c(0x99)](_0x2e681c,_0x42ddc1)[_0xbe515c(0xa5)](_0x4f604f=>{console['log'](_0x4f604f['user']);})['catch'](_0x181a62=>{const _0x3a939d=_0xbe515c;alert(_0x181a62[_0x3a939d(0x95)]),console[_0x3a939d(0x94)](_0x181a62['code']),console[_0x3a939d(0x94)](_0x181a62['message']),location[_0x3a939d(0xa4)]=_0x3a939d(0xa6);});}),auth['onAuthStateChanged'](_0x592720=>{const _0x41c84c=_0x580794;if(_0x592720){console[_0x41c84c(0x94)]('signed\x20in'),location[_0x41c84c(0xa4)]='./panel.html';var _0x24b99b=_0x592720['uid'];}else console[_0x41c84c(0x94)](_0x41c84c(0x9e));});
 
 
 </script>
