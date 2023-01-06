@@ -2,30 +2,7 @@
 // import "https://cdn.skypack.dev/firebase/compat/auth";
 // import "https://cdn.skypack.dev/firebase/compat/firestore";
 
-import {acc as ACCOUNT} from "https://giterhaber.github.io/web-codes/configs.js"
-import {cmBwsbFSqC as config} from "https://giterhaber.github.io/web-codes/configs.js"
-
-const app1 = firebase.initializeApp(ACCOUNT);
-const auth = firebase.auth(app1);
-
-auth.onAuthStateChanged((user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
-      var uid = user.uid;
-      // ...
-      console.log('signed in')
-    } else {
-      // User is signed out
-      // ...
-      console.log('signed out')
-      location.href = './'
-    }
-  });
-  $('#logout').on('click', () => {
-    auth.signOut()
-})
-
+const _0x190b6b=_0x3788;(function(_0xc6e91c,_0x3f2250){const _0x5dec86=_0x3788,_0xd3e43e=_0xc6e91c();while(!![]){try{const _0x3412ed=parseInt(_0x5dec86(0x13a))/0x1+parseInt(_0x5dec86(0x13b))/0x2+-parseInt(_0x5dec86(0x12f))/0x3+-parseInt(_0x5dec86(0x12d))/0x4+parseInt(_0x5dec86(0x135))/0x5*(-parseInt(_0x5dec86(0x12c))/0x6)+-parseInt(_0x5dec86(0x130))/0x7*(-parseInt(_0x5dec86(0x137))/0x8)+-parseInt(_0x5dec86(0x134))/0x9*(-parseInt(_0x5dec86(0x132))/0xa);if(_0x3412ed===_0x3f2250)break;else _0xd3e43e['push'](_0xd3e43e['shift']());}catch(_0x40314f){_0xd3e43e['push'](_0xd3e43e['shift']());}}}(_0x1ca5,0x94d80));function _0x3788(_0x55eb8,_0x15b436){const _0x1ca558=_0x1ca5();return _0x3788=function(_0x3788d5,_0xdc7f36){_0x3788d5=_0x3788d5-0x12c;let _0xde6c02=_0x1ca558[_0x3788d5];return _0xde6c02;},_0x3788(_0x55eb8,_0x15b436);}function _0x1ca5(){const _0x3fbec5=['onAuthStateChanged','4151890tKDFCd','signOut','9SVHBZs','1105KufCyG','click','107992HPqdgf','href','uid','826836MCKRlj','1641640UhWuKT','signed\x20in','8076KHgnUq','3619452uLDcMu','signed\x20out','1764981TuGgBk','175NzahOk'];_0x1ca5=function(){return _0x3fbec5;};return _0x1ca5();}import{acc as _0x1414e7}from'https://giterhaber.github.io/web-codes/configs.js';import{cmBwsbFSqC as _0x59ab7a}from'https://giterhaber.github.io/web-codes/configs.js';const app1=firebase['initializeApp'](_0x1414e7),auth=firebase['auth'](app1);auth[_0x190b6b(0x131)](_0x15d145=>{const _0x1874e0=_0x190b6b;if(_0x15d145){var _0x1b4727=_0x15d145[_0x1874e0(0x139)];console['log'](_0x1874e0(0x13c));}else console['log'](_0x1874e0(0x12e)),location[_0x1874e0(0x138)]='./';}),$('#logout')['on'](_0x190b6b(0x136),()=>{const _0x206160=_0x190b6b;auth[_0x206160(0x133)]();});
   
 //DATABASE
 
