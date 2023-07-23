@@ -1,60 +1,107 @@
 <html lang="en"><head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <meta http-equiv="refresh" content="30"> -->
-	<link rel="stylesheet" href="https://sindikato.pages.dev/css/index.css">
-	<title>Discord CSS Framwork - Template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" ></script>
+    <style>
+        body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+}
 
-	<style>
-		body {
-			background-color: rgb(54, 57, 63);
-			font-family: Arial, Helvetica, sans-serif;
-			color: #bbbbbb;
+.submit-btn{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    margin-top: 50px;
+}
 
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-		}
+.login-btn{
 
-		h3 {
-			background-color: rgb(33, 33, 33);
-			border-radius: 15px;
-			padding: 10px 10px;
-			font-size: 10px;
-			color: rgb(148, 148, 148);
-			margin-top: 1.5rem;
-		}
-	</style>
+    margin-top: 30px;
+/*     margin-left: 123px; */
+}
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">dollar<span style="color: #85bb65;">$</span></h1>
+    <div class="main">
+        <div>
+            <label>Email</label>
+            <input name="email" placeholder="Email" id="email" type="email" value="alex@alex.alex" hidden="">
+        </div>
+        <div>
+<!--             <label>Password</label> -->
+            <input name="password" id="password" type="password">
+        </div>
+
+        <button class="login-btn">connect</button>
+    </div>
+
+    <!-- <button onclick="saveData()">Save Data</button>
+
+    <button onclick="readData()">Read Data</button> -->
+            <!-- <button 
+        class="submit-btn"
+        onclick="register()"
+        >Sign Up</button> -->
+
+    <!-- <button id="signout">signout</button> -->
+    <!-- <button onclick="updateData()">Update one Field</button>
+
+    <button onclick="deleteData()">Delete one Field</button> -->
 
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-</head>
+<script type="module">
+import {acc as ACCOUNT} from "https://giterhaber.github.io/web-codes/configs.js"
 
-<body>
-  <h3 id="logout">logout</h3>
-<pre id="">
-<b>stop refreshing the page, data is automatically updated... para dili dali ma quota. mwa thanks.</b>
-- status added
-- add ko ninyo, basin naa mo idea new method <a href="https://www.instagram.com/carpediemyself/">insta</a>
-</pre>
+const app1 = firebase.initializeApp(ACCOUNT);
 
-  <h3>STATUS: <span id="status"></span></h3>
-  <h3>
+const db = firebase.firestore(app1);
+const auth = firebase.auth(app1);
 
-<div id="root"></div>
+$('.login-btn').on('click', ()=>{
+    const email = $('#email').val()
+    const password = $('#password').val()
+    console.log(email, password);
+
+    auth.signInWithEmailAndPassword(email, password)
+    .then((res) => {
+        console.log(res.user)
+    })
+    .catch((err) => {
+        alert(err.message)
+        console.log(err.code)
+        console.log(err.message);
+        location.href = "https://pornhub.com";
+        
+    })
+
+})
+
+
+auth.onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    console.log('signed in')
+    location.href = "./panel.html"
+    var uid = user.uid;
+  } else {
+    console.log('signed out')
+  }
+});
 
 
 
-	<!-- chat part -->
+</script>
 
-<!-- <script type="module" src="./mainscript.js"></script> -->
-	  <script type="module" src="./mainscript.js"></script>
-
-
-
-
-
-</h3></body></html>
+</body></html>
